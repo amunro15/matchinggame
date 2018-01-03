@@ -1,0 +1,67 @@
+* {
+     -moz-box-sizing: border-box; /* Firexfox */
+     -webkit-box-sizing: border-box; /* Safari/Chrome/iOS/Android */
+     box-sizing: border-box; /* IE */
+}
+
+body{
+  text-align:center;
+  font-size:14px;
+  background-color:black;
+}
+
+h1{
+  margin:0;
+  padding:2%;
+  font-family: 'Dosis', sans-serif;
+  font-size:3em;
+  color:rgb(255, 195, 30);
+}
+
+.fourcards{
+}
+
+.cards{
+  position:relative;
+  padding:5% 1% 5% 1%;
+}
+
+.allelse{
+  position:relative;
+}
+
+#start{
+  background-color:rgb(237, 54, 54);
+  border-radius:5px;
+  color:white;
+  padding:1% 2% 1% 2%;
+  font-family: 'Dosis', sans-serif;
+  font-size:2em;
+  margin:1%;
+  width:15%;
+  border:none;
+}
+
+#reset{
+  background-color:rgb(244, 66, 197);
+  border-radius:5px;
+  color:white;
+  padding:1% 2% 1% 2%;
+  font-family: 'Dosis', sans-serif;
+  font-size:2em;
+  margin:1%;
+  width:15%;
+  border:none;
+}
+
+#winner{
+  font-family: 'Dosis', sans-serif;
+  font-size:4em;
+  padding:5%;
+  color:white;
+}
+
+.stars{
+  color:red;
+  display:none;
+}
