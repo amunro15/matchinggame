@@ -7,20 +7,48 @@
 			<link rel="stylesheet" href="css/normalize.css">
 			<link rel="stylesheet" href="css/main.css">
 
-		<link href="https://fonts.googleapis.com/css?family=Dosis:800" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
 	</head>
 	<body>
 		<div class="container">
-			<h1>MATCH THE CARDS</h1>
-			<div class="fourcards">
-					<img src="images/back-of-card.png" class="cards">
-					<img src="images/back-of-card.png" class="cards">
-					<img src="images/back-of-card.png" class="cards">
-					<img src="images/back-of-card.png" class="cards">
+			<h1>Match the Cards!</h1>
+			<div class="selectLevel">
+				<label for="numPairs">
+					Select No. of Card Pairs to Match:
+				</label>
+				<select name="numPairs" id="numPairs">
+					<option value="2">
+						2 Pair
+					</option>
+					<option value="3">
+						3 Pair
+					</option>
+					<option value="4" selected>
+						4 Pair
+					</option>
+				</select>
 			</div>
+			<div class="fourcards">
+					<img src="images/waveCard.png" class="cards">
+					<img src="images/waveCard.png" class="cards">
+					<img src="images/waveCard.png" class="cards">
+					<img src="images/waveCard.png" class="cards">
+					<img src="images/waveCard.png" class="cards show2">
+					<img src="images/waveCard.png" class="cards show2">
+					<img src="images/waveCard.png" class="cards show2 show3">
+					<img src="images/waveCard.png" class="cards show2 show3">
+			</div>
+			<div class="starA star"></div>
+			<div class="starB star"></div>
+			<div class="starC star"></div>
+			<div class="starAA star"></div>
+			<div class="starBB star"></div>
+			<div class="starCC star"></div>
 			<div class="allelse">
-				<button id="start">RESHUFFLE</button>
-				<button id="reset">RESET</button>
+				<div class="buttonContainer">
+					<button id="reshuffle">Reshuffle</button>
+					<button id="reset">Reset</button>
+				</div>
 				<div id="winner"></div>
 			</div>
 		</div>
