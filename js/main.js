@@ -8,7 +8,9 @@
 
 $(document).ready(function(){
 
-  var myArray = ["images/crabCard.png","images/crabCard.png","images/dolphinCard.png","images/dolphinCard.png","images/fishCard.png","images/fishCard.png","images/shellCard.png","images/shellCard.png"];
+  var myArray = ["images/crabCard.png","images/crabCard.png","images/dolphinCard.png","images/dolphinCard.png","images/fishCard.png","images/fishCard.png"];
+  $(".cards").show();
+  $(".show3").hide();
   shuffle(myArray);
   console.log(shuffle(myArray));
 
@@ -45,10 +47,8 @@ $(document).ready(function(){
   }
 
   $( ".selectLevel" ).change(function() {
-    alert($(this).find(":selected").val());
     var selected = $(this).find(":selected").val();
     if (selected == 2){
-      alert("yo");
       myArray = ["images/crabCard.png","images/crabCard.png","images/dolphinCard.png","images/dolphinCard.png"];
       $(".show2").hide();
       selectedShuffle();
